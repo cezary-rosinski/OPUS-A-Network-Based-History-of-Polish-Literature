@@ -459,7 +459,9 @@ if Sigma is not None:
             node_size="pagerank",
             node_label="label",
             node_label_size="weighted_degree",
-            edge_size="weight"
+            node_label_size_range=(20, 42),
+            edge_size="weight",
+            label_density=0.8
         )
         print("Zapisano HTML:", OUT / "arkusz_person_cooccurrence_network.html")
     except Exception as e:
